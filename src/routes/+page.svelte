@@ -1,3 +1,6 @@
+<svelte:head>
+	<title>Bothell Band</title>
+</svelte:head>
 <h1 class="text-center text-white text-6xl md:text-7xl bebasneue my-12 align-middle ">
 	<span class="bg-bothellblue px-2">BOTHELL</span><span class="text-bothellblue bg-white px-2"
 		>BAND</span
