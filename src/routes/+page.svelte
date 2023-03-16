@@ -1,15 +1,26 @@
 <svelte:head>
 	<title>Bothell Band</title>
 </svelte:head>
-<h1 class="text-center text-white text-6xl md:text-7xl bebasneue my-12 align-middle ">
+<h1
+	data-aos="fade-down"
+	class="text-center text-white text-6xl md:text-7xl bebasneue my-12 align-middle "
+>
 	<span class="bg-bothellblue px-2">BOTHELL</span><span class="text-bothellblue bg-white px-2"
 		>BAND</span
 	>
 </h1>
 <section class="space-y-10">
-	<h2 class="bebasneue text-center text-white text-4xl">Upcoming Events...</h2>
+	<h2
+		class="bebasneue text-center text-white text-4xl"
+		data-aos="fade-down"
+	>
+		Upcoming Events...
+	</h2>
 	<div class="flex flex-col md:flex-row items-center justify-center space-y-10 md:space-y-0">
-		<div class="mx-4 shadow-2xl max-w-2xl">
+		<div
+			class="mx-4 shadow-2xl max-w-2xl"
+			data-aos="fade-right"
+		>
 			<div class="md:h-80">
 				<img
 					class="md:object-fill md:h-full"
@@ -34,7 +45,10 @@
 				>
 			</div>
 		</div>
-		<div class="mx-4 shadow-2xl max-w-2xl">
+		<div
+			class="mx-4 shadow-2xl max-w-2xl"
+			data-aos="fade-left"
+		>
 			<div class="md:h-80">
 				<img
 					alt="Essentially Ellington Logo"
