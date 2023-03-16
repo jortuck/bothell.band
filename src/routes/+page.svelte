@@ -4,6 +4,14 @@
 
 <svelte:head>
 	<title>Bothell Band</title>
+	<meta
+		name="description"
+		content="Discover the latest news and events from Bothell High School's band! Get updates on upcoming performances, buy tickets, and learn how you can support the band's fundraising efforts."
+	/>
+	<meta
+		property="og:title"
+		content="Bothell Band"
+	/>
 </svelte:head>
 <h1
 	data-aos="fade-down"
