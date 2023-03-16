@@ -19,7 +19,7 @@
 	<div class="flex flex-col md:flex-row items-center justify-center space-y-10 md:space-y-0">
 		<div
 			class="mx-4 shadow-2xl max-w-2xl"
-			data-aos="fade-right"
+			data-aos="fade-up"
 		>
 			<div class="md:h-80">
 				<img
@@ -47,7 +47,7 @@
 		</div>
 		<div
 			class="mx-4 shadow-2xl max-w-2xl"
-			data-aos="fade-left"
+			data-aos="fade-up"
 		>
 			<div class="md:h-80">
 				<img
