@@ -99,7 +99,7 @@
 <section class="mt-10 space-y-10">
 	<h2
 		class="bebasneue text-center text-white text-4xl"
-		data-aos="fade-down"
+		data-aos="fade-up"
 	>
 		Additional Resources
 	</h2>
