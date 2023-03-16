@@ -15,7 +15,7 @@
 </svelte:head>
 <h1
 	data-aos="fade-down"
-	class="text-center text-white text-6xl md:text-7xl bebasneue my-12 align-middle "
+	class="text-center text-white text-6xl md:text-7xl lg:text-8xl  bebasneue my-12 align-middle w-full"
 >
 	<span class="bg-bothellblue px-2">BOTHELL</span><span class="text-bothellblue bg-white px-2"
 		>BAND</span
