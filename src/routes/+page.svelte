@@ -1,3 +1,7 @@
+<script>
+	import Buttonlink from "$lib/Buttonlink.svelte";
+</script>
+
 <svelte:head>
 	<title>Bothell Band</title>
 </svelte:head>
@@ -37,8 +41,15 @@
 					March 31 2023 | The Paramount Theatre
 				</h3>
 			</div>
-			<div>
+			<div class="flex flex-row">
 				<a
+					rel="noreferrer"
+					class="bebasneue w-full bg-gray-500 text-white block text-center text-3xl py-3 hover:bg-gray-400"
+					href="https://www.stgpresents.org/calendar/13775/starbucks-26th-annual-hot-java-cool-jazz"
+					target="_blank">Learn More</a
+				>
+				<a
+					rel="noreferrer"
 					class="bebasneue w-full bg-yellow-600 text-white block text-center text-3xl py-3 hover:bg-yellow-500 "
 					href="https://my.cheddarup.com/c/bothellmusicboosters/item/4677147"
 					target="_blank">Purchase Tickets</a
@@ -62,16 +73,37 @@
 			</div>
 			<div class="flex flex-row">
 				<a
+					rel="noreferrer"
 					class="bebasneue w-full bg-gray-500 text-white block text-center text-3xl py-3 hover:bg-gray-400 "
 					href="https://2023.jazz.org/essentially-ellington"
 					target="_blank">Learn More</a
 				>
 				<a
+					rel="noreferrer"
 					class="bebasneue w-full bg-yellow-600 text-white block text-center text-3xl py-3 hover:bg-yellow-500 "
 					href="https://my.cheddarup.com/c/bothellmusicboosters/item/4724968"
 					target="_blank">Donate</a
 				>
 			</div>
+		</div>
+	</div>
+</section>
+<section class="mt-10 space-y-10">
+	<h2
+		class="bebasneue text-center text-white text-4xl"
+		data-aos="fade-down"
+	>
+		Additional Resources
+	</h2>
+	<div class="w-full flex items-center flex-col">
+		<div class="text-center space-y-4  flex flex-col w-full items-center items-stretch max-w-2xl">
+			<Buttonlink url="https://www.bothellmusicboosters.org/">Bothell Music Boosters</Buttonlink>
+			<Buttonlink url="https://www.facebook.com/bothellmusicboosters"
+				>Bothell Music Boosters Facebook</Buttonlink
+			>
+			<Buttonlink url="https://my.cheddarup.com/c/bothellmusicboosters"
+				>Bothell Music Boosters Cheddar Up</Buttonlink
+			>
 		</div>
 	</div>
 </section>
