@@ -1,5 +1,6 @@
 <script>
 	import Buttonlink from "$lib/Buttonlink.svelte";
+	import Card from "$lib/Card.svelte";
 </script>
 
 <svelte:head>
@@ -29,71 +30,38 @@
 		Upcoming Events...
 	</h2>
 	<div class="flex flex-col items-center justify-center space-y-10 md:flex-row md:space-y-0">
-		<div
-			class="mx-4 max-w-2xl shadow-2xl"
-			data-aos="fade-up"
-		>
-			<div class="md:h-80">
-				<img
-					class="md:h-full md:object-fill"
-					alt="hot java cool jazz logo"
-					src="/hotjava.jpg"
-				/>
-			</div>
-
-			<div class="bg-bgsecondary py-2 px-1">
-				<h3 class="bebasneue text-center text-2xl text-white">
-					Starbucks 26th Annual Hot Java Cool Jazz
-				</h3>
-				<h3 class="bebasneue text-center text-2xl text-white">
-					March 31 2023 | The Paramount Theatre
-				</h3>
-			</div>
-			<div class="flex flex-row">
-				<a
-					rel="noreferrer"
-					class="bebasneue block w-full bg-gray-500 py-3 text-center text-3xl text-white hover:bg-gray-400"
-					href="https://www.stgpresents.org/calendar/13775/starbucks-26th-annual-hot-java-cool-jazz"
-					target="_blank">Learn More</a
-				>
-				<a
-					rel="noreferrer"
-					class="bebasneue block w-full bg-yellow-600 py-3 text-center text-3xl text-white hover:bg-yellow-500 "
-					href="https://my.cheddarup.com/c/bothellmusicboosters/item/4677147"
-					target="_blank">Purchase Tickets</a
-				>
-			</div>
-		</div>
-		<div
-			class="mx-4 max-w-2xl shadow-2xl"
-			data-aos="fade-up"
-		>
-			<div class="md:h-80">
-				<img
-					alt="Essentially Ellington Logo"
-					class="md:h-full md:object-fill"
-					src="/ellington.jpg"
-				/>
-			</div>
-			<div class="bg-bgsecondary py-2 px-1">
-				<h3 class="bebasneue text-center text-2xl text-white">Essentially Ellington</h3>
-				<h3 class="bebasneue text-center text-2xl text-white">May 11th-13th | New York City</h3>
-			</div>
-			<div class="flex flex-row">
-				<a
-					rel="noreferrer"
-					class="bebasneue block w-full bg-gray-500 py-3 text-center text-3xl text-white hover:bg-gray-400 "
-					href="https://2023.jazz.org/essentially-ellington"
-					target="_blank">Learn More</a
-				>
-				<a
-					rel="noreferrer"
-					class="bebasneue block w-full bg-yellow-600 py-3 text-center text-3xl text-white hover:bg-yellow-500 "
-					href="https://my.cheddarup.com/c/bothellmusicboosters/item/4724968"
-					target="_blank">Donate</a
-				>
-			</div>
-		</div>
+		<Card
+			image="/hotjava.jpg"
+			imgAlt="hot java cool jazz logo"
+			name="Starbucks 26th Annual Hot Java Cool Jazz"
+			location="March 31 2023 | The Paramount Theatre"
+			buttons={[
+				{
+					text: "Learn More",
+					style: "plain",
+					link: "https://www.stgpresents.org/calendar/13775/starbucks-26th-annual-hot-java-cool-jazz"
+				},
+				{
+					text: "Purchase Tickets",
+					style: "monetized",
+					link: "https://my.cheddarup.com/c/bothellmusicboosters/item/4677147"
+				}
+			]}
+		/>
+		<Card
+			image="/ellington.jpg"
+			imgAlt="Essentially Ellington Logo"
+			name="Essentially Ellington"
+			location="May 11th-13th | New York City"
+			buttons={[
+				{ text: "Learn More", style: "plain", link: "https://2023.jazz.org/essentially-ellington" },
+				{
+					text: "Donate",
+					style: "monetized",
+					link: "https://my.cheddarup.com/c/bothellmusicboosters/item/472496"
+				}
+			]}
+		/>
 	</div>
 </section>
 <section class="mt-10 space-y-10">
