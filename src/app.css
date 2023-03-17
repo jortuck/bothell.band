@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Neonderthaw&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +6,9 @@
 html{
     background-color: #131521;
 }
-
+.jazztext{
+    font-family: 'Bebas Neue';
+}
 .bebasneue{
     font-family: 'Bebas Neue';
 }
