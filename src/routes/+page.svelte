@@ -42,7 +42,7 @@
 					link: "https://www.stgpresents.org/calendar/13775/starbucks-26th-annual-hot-java-cool-jazz"
 				},
 				{
-					text: "Purchase Tickets",
+					text: "Tickets",
 					style: "monetized",
 					link: "https://my.cheddarup.com/c/bothellmusicboosters/item/4677147"
 				}
