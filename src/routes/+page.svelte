@@ -41,7 +41,7 @@
 			location="March 31 2023 | The Paramount Theatre"
 			buttons={[
 				{
-					text: "Learn More",
+					text: "Event Website",
 					style: "plain",
 					link: "https://www.stgpresents.org/calendar/13775/starbucks-26th-annual-hot-java-cool-jazz"
 				},
@@ -58,7 +58,11 @@
 			name="Essentially Ellington"
 			location="May 11th-13th | New York City"
 			buttons={[
-				{ text: "Learn More", style: "plain", link: "https://2023.jazz.org/essentially-ellington" },
+				{
+					text: "Event Website",
+					style: "plain",
+					link: "https://2023.jazz.org/essentially-ellington"
+				},
 				{
 					text: "Donate",
 					style: "monetized",
@@ -82,7 +86,7 @@
 				>Bothell Music Boosters Facebook</Buttonlink
 			>
 			<Buttonlink url="https://my.cheddarup.com/c/bothellmusicboosters"
-				>Bothell Music Boosters Cheddar Up</Buttonlink
+				>Bothell Music Boosters Store</Buttonlink
 			>
 		</div>
 	</div>

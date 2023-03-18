@@ -23,14 +23,15 @@
 		/>
 	</div>
 	<div class="bg-bgsecondary py-2 px-1">
-		<h3 class="bebasneue text-center text-2xl text-white">{name}</h3>
-		<h3 class="bebasneue text-center text-2xl text-white">{location}</h3>
+		<h3 class="bebasneue text-center text-2xl text-white lg:text-3xl">{name}</h3>
+		<h3 class="bebasneue text-center text-2xl text-white lg:text-3xl">{location}</h3>
 	</div>
 	<div class="flex flex-row">
 		{#each buttons as button}
 			<a
 				rel="noreferrer"
-				class="bebasneue block w-full py-3 text-center text-3xl {button.style}"
+				role="button"
+				class="bebasneue block w-full py-3 text-center text-2xl md:text-3xl {button.style}"
 				href={button.link}
 				target="_blank">{button.text}</a
 			>
