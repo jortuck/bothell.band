@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Neonderthaw&display=swap');
-@tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat+Brush&display=swap');@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -7,7 +6,8 @@ html{
     background-color: #131521;
 }
 .jazztext{
-    font-family: 'Bebas Neue';
+    font-family: 'Caveat Brush';
+    font-weight: bolder;
 }
 .bebasneue{
     font-family: 'Bebas Neue';

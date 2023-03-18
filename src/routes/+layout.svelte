@@ -13,13 +13,24 @@
 	});
 </script>
 
-<div class="container mx-auto flex flex-col h-screen justify-between">
+<div class="scrollbar-hide container mx-auto flex h-screen flex-col justify-between">
 	<main>
 		<slot />
 	</main>
 	<footer>
-		<p class="text-center text-gray-500 my-5">
+		<p class="my-5 text-center text-gray-500">
 			This website is not affiliated with the Northshore School District or Bothell High School.
 		</p>
 	</footer>
 </div>
+
+<style>
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none;
+	}
+
+	.scrollbar-hide {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+</style>

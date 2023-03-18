@@ -11,10 +11,7 @@
 	export let buttons: CardBtn[];
 </script>
 
-<div
-	class="mx-4 max-w-2xl shadow-2xl"
-	data-aos="fade-up"
->
+<div class="mx-4 max-w-2xl shadow-2xl">
 	<div class="md:h-80">
 		<img
 			alt={imgAlt}
