@@ -11,13 +11,18 @@
 	export let buttons: CardBtn[];
 </script>
 
-<div class="mx-4 max-w-2xl shadow-2xl">
-	<div class="md:h-80">
-		<img
-			alt={imgAlt}
-			class="md:h-full md:object-fill"
-			src={image}
-		/>
+<div class="w-full ">
+	<div
+		style="background-image: url({image})"
+		class="bg-white md:h-80"
+	>
+		<div class="h-full  backdrop-blur-2xl">
+			<img
+				alt={imgAlt}
+				class="relative z-40 mx-auto h-full object-cover "
+				src={image}
+			/>
+		</div>
 	</div>
 	<div class="bg-bgsecondary py-2 px-1">
 		<h3 class="bebasneue text-center text-2xl text-white lg:text-3xl">{name}</h3>

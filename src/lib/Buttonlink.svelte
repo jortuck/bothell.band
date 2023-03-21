@@ -3,7 +3,6 @@
 </script>
 
 <a
-	data-aos="fade-in"
 	role="button"
 	href={url}
 	target="_blank"
