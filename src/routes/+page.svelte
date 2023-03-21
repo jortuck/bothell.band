@@ -105,7 +105,7 @@
 		<h2 class="bebasneue text-center text-4xl text-white md:text-5xl">Additional Resources</h2>
 		<div class="flex w-full flex-col items-center">
 			<div class="flex w-full  max-w-2xl flex-col items-center items-stretch space-y-4 text-center">
-				{#if browser && navigator.share()}
+				{#if browser && navigator.share}
 					<button
 						on:click={share}
 						class="bebasneue mx-3 bg-bothellblue p-3 align-middle text-3xl text-white shadow-2xl transition-all duration-300 ease-in-out hover:bg-white hover:text-bothellblue md:text-4xl"
