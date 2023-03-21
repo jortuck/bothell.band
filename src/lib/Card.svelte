@@ -14,12 +14,12 @@
 <div class="w-full ">
 	<div
 		style="background-image: url({image})"
-		class="bg-white md:h-80"
+		class="h-72 bg-white md:h-80"
 	>
 		<div class="h-full  backdrop-blur-2xl">
 			<img
 				alt={imgAlt}
-				class="relative z-40 mx-auto h-full object-cover "
+				class="relative z-40 mx-auto h-full object-contain "
 				src={image}
 			/>
 		</div>
