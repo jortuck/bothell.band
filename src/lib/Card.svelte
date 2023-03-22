@@ -47,9 +47,9 @@
 
 <style lang="postcss">
 	.plain {
-		@apply bg-gray-500 text-white hover:bg-gray-400;
+		@apply bg-gray-500 text-white transition-colors duration-300 ease-in-out hover:bg-gray-400;
 	}
 	.monetized {
-		@apply bg-yellow-600 text-white hover:bg-yellow-500;
+		@apply bg-yellow-600 text-white transition-colors duration-300 ease-in-out hover:bg-yellow-500;
 	}
 </style>
