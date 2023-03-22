@@ -13,7 +13,7 @@
 </script>
 
 <div
-	class="w-full "
+	class="w-full shadow-2xl shadow-gray-800"
 	{id}
 >
 	<div
