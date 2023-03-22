@@ -62,6 +62,7 @@
 	>
 		<div class="mx-4 grid grid-cols-1  space-y-10 lg:grid-cols-2 lg:space-y-0 lg:space-x-10">
 			<Card
+				id="hotjava"
 				image="/hotjava.jpg"
 				imgAlt="hot java cool jazz logo"
 				name="Starbucks 26th Annual Hot Java Cool Jazz"
@@ -80,6 +81,7 @@
 				]}
 			/>
 			<Card
+				id="ellington"
 				image="/ellington.jpg"
 				imgAlt="Essentially Ellington Logo"
 				name="Essentially Ellington"

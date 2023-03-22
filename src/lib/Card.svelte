@@ -2,6 +2,7 @@
 	export let name: string = "Event";
 	export let location: string = "Location";
 	export let image: string = "image";
+	export let id: string;
 	export let imgAlt: string = "image";
 	type CardBtn = {
 		readonly text: string;
@@ -11,7 +12,10 @@
 	export let buttons: CardBtn[];
 </script>
 
-<div class="w-full ">
+<div
+	class="w-full "
+	{id}
+>
 	<div
 		style="background-image: url({image})"
 		class="h-72 bg-white md:h-80"
