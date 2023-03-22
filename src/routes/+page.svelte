@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>Bothell High School Jazz Band</title>
+	<title>Bothell High School Jazz Band | Home</title>
 	<meta
 		name="description"
 		content="Discover the latest news and events from Bothell High School's Jazz Band! Get updates on upcoming performances, buy tickets, and learn how you can support the band's fundraising efforts."
@@ -30,7 +30,7 @@
 	/>
 	<meta
 		property="og:title"
-		content="Bothell High School Jazz Band"
+		content="Bothell High School Jazz Band | Home"
 	/>
 	<meta
 		property="og:url"
