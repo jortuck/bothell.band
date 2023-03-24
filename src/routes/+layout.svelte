@@ -13,7 +13,10 @@
 	});
 </script>
 
-<div class="scrollbar-hide container mx-auto flex h-screen flex-col justify-between">
+<div
+	data-aos="fade-in"
+	class="scrollbar-hide container mx-auto flex h-screen flex-col justify-between"
+>
 	<main>
 		<slot />
 	</main>
