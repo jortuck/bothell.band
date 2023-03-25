@@ -105,11 +105,18 @@
 						>Share This Website!</button
 					>
 				{/if}
-				<Buttonlink url="https://www.bothellmusicboosters.org/">Bothell Music Boosters</Buttonlink>
-				<Buttonlink url="https://www.facebook.com/bothellmusicboosters"
+				<Buttonlink
+					refer={true}
+					url="https://www.bothellmusicboosters.org/">Bothell Music Boosters</Buttonlink
+				>
+				<Buttonlink
+					refer={false}
+					url="https://www.facebook.com/bothellmusicboosters"
 					>Bothell Music Boosters Facebook</Buttonlink
 				>
-				<Buttonlink url="https://my.cheddarup.com/c/bothellmusicboosters"
+				<Buttonlink
+					refer={true}
+					url="https://my.cheddarup.com/c/bothellmusicboosters"
 					>Bothell Music Boosters Store</Buttonlink
 				>
 			</div>
