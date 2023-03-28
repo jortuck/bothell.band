@@ -18,11 +18,13 @@
 	<title>Bothell High School Jazz Band | Home</title>
 	<meta
 		name="description"
-		content="Discover the latest news and events from Bothell High School's Jazz Band! Get updates on upcoming performances, buy tickets, and learn how you can support the band's fundraising efforts."
+		content="Stay up-to-date on Bothell High School Jazz Band's news and events. Buy tickets, support fundraising efforts, and don't miss upcoming performances.
+"
 	/>
 	<meta
 		name="og:description"
-		content="Discover the latest news and events from Bothell High School's Jazz Band! Get updates on upcoming performances, buy tickets, and learn how you can support the band's fundraising efforts."
+		content="Stay up-to-date on Bothell High School Jazz Band's news and events. Buy tickets, support fundraising efforts, and don't miss upcoming performances.
+"
 	/>
 	<meta
 		name="keywords"

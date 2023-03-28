@@ -21,7 +21,7 @@
 		<slot />
 	</main>
 	<footer>
-		<p class="my-5 text-center text-gray-500">
+		<p class="my-5 text-center text-gray-500 opacity-50">
 			This website is not affiliated with the Northshore School District or Bothell High School.
 		</p>
 	</footer>
