@@ -23,6 +23,10 @@
 	<footer>
 		<p class="my-5 text-center text-gray-500 opacity-50">
 			This website is not affiliated with the Northshore School District or Bothell High School.
+			Questions or comments should be directed to <a
+				class="underline"
+				href="mailto:admin@bothell.band">admin@bothell.band</a
+			>
 		</p>
 	</footer>
 </div>
