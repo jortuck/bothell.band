@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https:/bothell.band/sitemap.xml
+Sitemap: https://bothell.band/sitemap.xml
