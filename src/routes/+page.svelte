@@ -55,11 +55,12 @@
 	<div class="grid grid-rows-1 justify-items-center space-y-10">
 		<div class="mx-4 grid grid-cols-1  space-y-10 lg:grid-cols-2 lg:space-y-0 lg:space-x-10">
 			<Card
+				alert="Sold Out!"
 				id="hotjava"
 				image="/hotjava.jpg"
 				imgAlt="hot java cool jazz logo"
 				name="Starbucks 26th Annual Hot Java Cool Jazz"
-				location="March 31 2023 | The Paramount Theatre"
+				location="March 31 2023 7PM | The Paramount Theatre"
 				buttons={[
 					{
 						text: "Event Website",
@@ -67,7 +68,8 @@
 						link: "https://www.stgpresents.org/calendar/13775/starbucks-26th-annual-hot-java-cool-jazz"
 					},
 					{
-						text: "Tickets",
+						text: "Tickets (SOLD OUT!)",
+						disabled: true,
 						style: "monetized",
 						link: "https://my.cheddarup.com/c/bothellmusicboosters/item/4677147"
 					}

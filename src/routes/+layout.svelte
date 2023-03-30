@@ -17,7 +17,7 @@
 	data-aos="fade-in"
 	class="scrollbar-hide container mx-auto flex h-screen flex-col justify-between"
 >
-	<main>
+	<main class="flex-1">
 		<slot />
 	</main>
 	<footer>
