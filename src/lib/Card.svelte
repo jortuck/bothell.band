@@ -25,7 +25,7 @@
 		<div class="h-full  backdrop-blur-2xl">
 			{#if alert}
 				<div
-					class="absolute z-50 flex h-full w-full items-center justify-center bg-black bg-opacity-70"
+					class="relative z-50 flex h-full w-full items-center justify-center bg-black bg-opacity-70 object-contain"
 				>
 					<h4
 						class="bebasneue -rotate-45 text-center align-middle text-7xl font-extrabold text-white opacity-100"
@@ -36,7 +36,7 @@
 			{/if}
 			<img
 				alt={imgAlt}
-				class="relative z-40 mx-auto h-full object-contain "
+				class="relative z-40 mx-auto h-full object-contain"
 				src={image}
 			/>
 		</div>
