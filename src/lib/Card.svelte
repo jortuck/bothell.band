@@ -22,10 +22,15 @@
 		style="background-image: url({image})"
 		class="h-72 bg-white md:h-80"
 	>
-		<div class="h-full  backdrop-blur-2xl">
+		<div class="relative h-full  backdrop-blur-2xl">
+			<img
+				alt={imgAlt}
+				class="relative z-40 mx-auto h-full object-contain"
+				src={image}
+			/>
 			{#if alert}
 				<div
-					class="relative z-50 flex h-full w-full items-center justify-center bg-black bg-opacity-70 object-contain"
+					class="absolute top-0 left-0 z-50  flex h-full w-full items-center justify-center bg-black bg-opacity-70 object-contain"
 				>
 					<h4
 						class="bebasneue -rotate-45 text-center align-middle text-7xl font-extrabold text-white opacity-100"
@@ -34,11 +39,6 @@
 					</h4>
 				</div>
 			{/if}
-			<img
-				alt={imgAlt}
-				class="relative z-40 mx-auto h-full object-contain"
-				src={image}
-			/>
 		</div>
 	</div>
 	<div class="bg-bgsecondary py-2 px-1">
