@@ -44,12 +44,6 @@
 	/>
 </svelte:head>
 
-<h1
-	class="mb-12 block flex w-full flex-row items-center justify-center text-center text-6xl md:mt-12 md:text-8xl"
->
-	<div class="bebasneue w-full bg-bothellblue p-2 text-white md:w-auto">BOTHELL</div>
-	<div class="jazztext w-full bg-white p-2 text-bothellblue md:w-auto">JAZZ</div>
-</h1>
 <section class="mb-10 space-y-10">
 	<h2 class="bebasneue text-center text-4xl text-white md:text-5xl">Upcoming Events...</h2>
 	<div class="grid grid-rows-1 justify-items-center space-y-10">

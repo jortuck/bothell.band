@@ -17,11 +17,17 @@
 	data-aos="fade-in"
 	class="scrollbar-hide container mx-auto flex h-screen flex-col justify-between"
 >
+	<h1
+		class="mb-12 block flex w-full flex-row items-center justify-center text-center text-6xl md:mt-12 md:text-8xl"
+	>
+		<div class="bebasneue w-full bg-bothellblue p-2 text-white md:w-auto">BOTHELL</div>
+		<div class="jazztext w-full bg-white p-2 text-bothellblue md:w-auto">JAZZ</div>
+	</h1>
 	<main class="flex-1">
 		<slot />
 	</main>
 	<footer>
-		<p class="my-5 text-center text-gray-500 opacity-50">
+		<p class="my-5 mx-4 text-center text-gray-500 opacity-50">
 			This website is not affiliated with the Northshore School District or Bothell High School.
 			Questions or comments should be directed to <a
 				class="underline"
