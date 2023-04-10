@@ -49,32 +49,12 @@
 	<div class="grid grid-rows-1 justify-items-center space-y-10">
 		<div class="mx-4 grid grid-cols-1  space-y-10 lg:grid-cols-2 lg:space-y-0 lg:space-x-10">
 			<Card
-				alert="Sold Out!"
-				id="hotjava"
-				image="/hotjava.jpg"
-				imgAlt="hot java cool jazz logo"
-				name="Starbucks 26th Annual Hot Java Cool Jazz"
-				location="March 31 2023 7PM | The Paramount Theatre"
-				buttons={[
-					{
-						text: "Event Website",
-						style: "plain",
-						link: "https://www.stgpresents.org/calendar/13775/starbucks-26th-annual-hot-java-cool-jazz"
-					},
-					{
-						text: "Tickets (SOLD OUT!)",
-						disabled: true,
-						style: "monetized",
-						link: "https://my.cheddarup.com/c/bothellmusicboosters/item/4677147"
-					}
-				]}
-			/>
-			<Card
 				id="ellington"
 				image="/ellington.jpg"
 				imgAlt="Essentially Ellington Logo"
 				name="Essentially Ellington"
 				location="May 11th-13th | New York City"
+				highlighted={true}
 				buttons={[
 					{
 						text: "Event Website",
@@ -85,6 +65,20 @@
 						text: "Donate",
 						style: "monetized",
 						link: "https://my.cheddarup.com/c/bothellmusicboosters/item/472496"
+					}
+				]}
+			/>
+			<Card
+				id="carwash"
+				image="/band.jpg"
+				imgAlt="hot java cool jazz logo"
+				name="BHS Jazz Car Wash Fundraiser"
+				location="APRIL 30 2023 11 AM – 5 PM | Les Schwab Tire Center"
+				buttons={[
+					{
+						text: "Event Website",
+						style: "plain",
+						link: "https://www.facebook.com/events/774412340521812"
 					}
 				]}
 			/>

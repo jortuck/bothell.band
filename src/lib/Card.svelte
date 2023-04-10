@@ -4,6 +4,7 @@
 	export let image: string = "image";
 	export let id: string;
 	export let alert: string;
+	export let highlighted: boolean = false;
 	export let imgAlt: string = "image";
 	type CardBtn = {
 		readonly text: string;
@@ -15,9 +16,18 @@
 </script>
 
 <div
-	class="w-full shadow-2xl shadow-gray-800"
+	class=" w-full shadow-xl"
+	class:highlighted
+	class:shadow-gray-800={!highlighted}
 	{id}
 >
+	{#if highlighted}
+		<div
+			class="bebasneue absolute z-50 bg-yellow-600 p-1 text-center text-lg tracking-wide text-white"
+		>
+			<p>Highlighted Event!</p>
+		</div>
+	{/if}
 	<div
 		style="background-image: url({image})"
 		class="h-72 bg-white md:h-80"
@@ -41,7 +51,7 @@
 			{/if}
 		</div>
 	</div>
-	<div class="bg-bgsecondary py-2 px-1">
+	<div class="bg-bgsecondary py-2 px-3">
 		<h3 class="bebasneue text-center text-2xl text-white lg:text-3xl">{name}</h3>
 		<h3 class="bebasneue text-center text-2xl text-white lg:text-3xl">{location}</h3>
 	</div>
@@ -65,6 +75,9 @@
 </div>
 
 <style lang="postcss">
+	.highlighted {
+		@apply outline outline-2 outline-yellow-600;
+	}
 	.plain {
 		@apply bg-gray-500 text-white transition-colors duration-300 ease-in-out hover:bg-gray-400;
 	}
