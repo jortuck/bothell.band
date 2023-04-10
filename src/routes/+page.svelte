@@ -71,7 +71,7 @@
 			<Card
 				id="carwash"
 				image="/band.jpg"
-				imgAlt="hot java cool jazz logo"
+				imgAlt="Bothell High School Jazz Performing at The Paramount Theatre during Hot Java Cool Jazz"
 				name="BHS Jazz Car Wash Fundraiser"
 				location="APRIL 30 2023 11 AM – 5 PM | Les Schwab Tire Center"
 				buttons={[
