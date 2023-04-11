@@ -75,9 +75,6 @@
 </div>
 
 <style lang="postcss">
-	.highlighted {
-		@apply outline outline-2 outline-yellow-600;
-	}
 	.plain {
 		@apply bg-gray-500 text-white transition-colors duration-300 ease-in-out hover:bg-gray-400;
 	}
