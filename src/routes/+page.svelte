@@ -47,13 +47,14 @@
 <section class="mb-10 space-y-10">
 	<h2 class="bebasneue text-center text-4xl text-white md:text-5xl">Upcoming Events...</h2>
 	<div class="grid grid-rows-1 justify-items-center space-y-10">
-		<div class="mx-4 grid grid-cols-1  space-y-10 lg:grid-cols-2 lg:space-y-0 lg:space-x-10">
+		<div class="mx-4 grid grid-cols-1  gap-x-10 gap-y-5 lg:grid-cols-2">
 			<Card
 				id="ellington"
 				image="/ellington.jpg"
 				imgAlt="Essentially Ellington Logo"
 				name="Essentially Ellington"
-				location="May 11th-13th | New York City"
+				date="May 11th-13th"
+				location="New York City"
 				highlighted={true}
 				buttons={[
 					{
@@ -69,11 +70,45 @@
 				]}
 			/>
 			<Card
+				id="redrobin"
+				image="/rr.jpg"
+				imgAlt="Graphics showing red robin fundraising event"
+				name="BHS Red Robin Fundraiser"
+				locationURL="https://goo.gl/maps/R9gSQTimE3ppm3QNA"
+				date="APRIL 18 2023 5 PM - 9 PM"
+				location="Bothell Red Robin"
+				buttons={[
+					{
+						text: "Ordering Instructions",
+						style: "plain",
+						link: "https://www.facebook.com/bothellmusicboosters/posts/pfbid0eFrjGr5R9RNVyk6d2xNDX51fKVxY59qdJAkBGY8rs4Y6PXV8hKahLZipMgNtnNo1l"
+					}
+				]}
+			/>
+			<Card
+				id="concert"
+				image="/concert.jpg"
+				imgAlt="Graphics showing Benefits concert details"
+				name="BHS Jazz Benefit Concert"
+				locationURL="https://goo.gl/maps/1tcqh4D83idvwUkR8"
+				date="APRIL 26 2023 6:30PM"
+				location="Main Street, Bothell"
+				buttons={[
+					{
+						text: "Event Website",
+						style: "plain",
+						link: "https://www.facebook.com/events/1727179121087776/"
+					}
+				]}
+			/>
+			<Card
 				id="carwash"
-				image="/band.jpg"
-				imgAlt="Bothell High School Jazz Performing at The Paramount Theatre during Hot Java Cool Jazz"
+				image="/carwash.jpg"
+				imgAlt="Graphics showing BHS Jazz Car Wash Fundraiser"
 				name="BHS Jazz Car Wash Fundraiser"
-				location="APRIL 30 2023 11 AM – 5 PM | Les Schwab Tire Center"
+				locationURL="https://goo.gl/maps/NwqwfDD7sWJsfmX48"
+				date="APRIL 30 2023 11 AM – 5 PM"
+				location="Les Schwab Tire Center"
 				buttons={[
 					{
 						text: "Event Website",

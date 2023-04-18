@@ -1,6 +1,8 @@
 <script lang="ts">
 	export let name: string = "Event";
 	export let location: string = "Location";
+	export let date: string = "SOON";
+	export let locationURL: string;
 	export let image: string = "image";
 	export let id: string;
 	export let alert: string;
@@ -16,7 +18,7 @@
 </script>
 
 <div
-	class=" w-full shadow-xl"
+	class="w-full items-center justify-center justify-items-center shadow-xl"
 	class:highlighted
 	class:shadow-gray-800={!highlighted}
 	{id}
@@ -53,7 +55,19 @@
 	</div>
 	<div class="bg-bgsecondary py-2 px-3">
 		<h3 class="bebasneue text-center text-2xl text-white lg:text-3xl">{name}</h3>
-		<h3 class="bebasneue text-center text-2xl text-white lg:text-3xl">{location}</h3>
+		<h3 class="bebasneue text-center text-2xl text-white lg:text-3xl">
+			{date} |
+			{#if locationURL}
+				<a
+					class="location"
+					target="_blank"
+					rel="noreferrer"
+					href={locationURL}>{location}</a
+				>
+			{:else}
+				{location}
+			{/if}
+		</h3>
 	</div>
 	<div class="flex flex-row">
 		{#each buttons as button}
@@ -86,5 +100,8 @@
 	}
 	.monetized.plain {
 		@apply cursor-not-allowed hover:bg-gray-500;
+	}
+	.location {
+		@apply text-blue-400;
 	}
 </style>
