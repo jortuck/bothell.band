@@ -70,22 +70,6 @@
 				]}
 			/>
 			<Card
-				id="redrobin"
-				image="/rr.jpg"
-				imgAlt="Graphics showing red robin fundraising event"
-				name="BHS Red Robin Fundraiser"
-				locationURL="https://goo.gl/maps/R9gSQTimE3ppm3QNA"
-				date="APRIL 18 2023 5 PM - 9 PM"
-				location="Bothell Red Robin"
-				buttons={[
-					{
-						text: "Ordering Instructions",
-						style: "plain",
-						link: "https://www.facebook.com/bothellmusicboosters/posts/pfbid0eFrjGr5R9RNVyk6d2xNDX51fKVxY59qdJAkBGY8rs4Y6PXV8hKahLZipMgNtnNo1l"
-					}
-				]}
-			/>
-			<Card
 				id="concert"
 				image="/concert.jpg"
 				imgAlt="Graphics showing Benefits concert details"
