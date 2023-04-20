@@ -70,6 +70,22 @@
 				]}
 			/>
 			<Card
+				id="mod"
+				image="/mod.jpg"
+				imgAlt="Graphics showing Benefits concert details"
+				name="BHS Jazz 1 Mod Pizza Fund Raiser"
+				locationURL="https://goo.gl/maps/fnbK5dTa9bFpg3ba7"
+				date="APRIL 24 2023 ALL DAY"
+				location="Canyon Park Mod Pizza"
+				buttons={[
+					{
+						text: "Event Website & Ordering Instructions",
+						style: "plain",
+						link: "https://modpizza.force4good.com/event/851f0be9-0728-4bbb-87ef-bb98afdc3e40"
+					}
+				]}
+			/>
+			<Card
 				id="concert"
 				image="/concert.jpg"
 				imgAlt="Graphics showing Benefits concert details"
