@@ -65,7 +65,7 @@
 					{
 						text: "Donate",
 						style: "monetized",
-						link: "https://my.cheddarup.com/c/bothellmusicboosters/item/472496"
+						link: "https://my.cheddarup.com/c/bothellmusicboosters/item/4724968"
 					}
 				]}
 			/>
