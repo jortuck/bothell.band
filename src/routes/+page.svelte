@@ -70,22 +70,6 @@
 				]}
 			/>
 			<Card
-				id="concert"
-				image="/concert.jpg"
-				imgAlt="Graphics showing Benefits concert details"
-				name="BHS Jazz Benefit Concert"
-				locationURL="https://goo.gl/maps/1tcqh4D83idvwUkR8"
-				date="APRIL 26 2023 6:30PM"
-				location="Main Street, Bothell"
-				buttons={[
-					{
-						text: "Event Website",
-						style: "plain",
-						link: "https://www.facebook.com/events/1727179121087776/"
-					}
-				]}
-			/>
-			<Card
 				id="carwash"
 				image="/carwash.jpg"
 				imgAlt="Graphics showing BHS Jazz Car Wash Fundraiser"
