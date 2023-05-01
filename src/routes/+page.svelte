@@ -69,22 +69,6 @@
 					}
 				]}
 			/>
-			<Card
-				id="carwash"
-				image="/carwash.jpg"
-				imgAlt="Graphics showing BHS Jazz Car Wash Fundraiser"
-				name="BHS Jazz Car Wash Fundraiser"
-				locationURL="https://goo.gl/maps/NwqwfDD7sWJsfmX48"
-				date="APRIL 30 2023 11 AM – 5 PM"
-				location="Les Schwab Tire Center"
-				buttons={[
-					{
-						text: "Event Website",
-						style: "plain",
-						link: "https://www.facebook.com/events/774412340521812"
-					}
-				]}
-			/>
 		</div>
 	</div>
 </section>
