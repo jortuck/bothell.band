@@ -12,7 +12,7 @@
 		readonly text: string;
 		readonly link: string;
 		readonly disabled: boolean;
-		readonly style: "plain" | "monetized";
+		readonly style: "plain" | "monetized"|"live";
 	};
 	export let buttons: CardBtn[];
 </script>
@@ -94,6 +94,9 @@
 	}
 	.monetized {
 		@apply bg-yellow-600 text-white transition-colors duration-300 ease-in-out hover:bg-yellow-500;
+	}
+	.live {
+		@apply bg-red-500 text-white transition-colors duration-300 ease-in-out hover:bg-red-400;
 	}
 	.monetized.disabled {
 		@apply cursor-not-allowed hover:bg-yellow-600;
