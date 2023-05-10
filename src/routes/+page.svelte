@@ -53,7 +53,7 @@
 				image="/ellington.jpg"
 				imgAlt="Essentially Ellington Logo"
 				name="Essentially Ellington"
-				date="May 11th-13th"
+				date="May 11th - 11AM PDT"
 				location="New York City"
 				highlighted={true}
 				buttons={[
@@ -63,9 +63,9 @@
 						link: "https://2023.jazz.org/essentially-ellington"
 					},
 					{
-						text: "Donate",
-						style: "monetized",
-						link: "https://my.cheddarup.com/c/bothellmusicboosters/item/4724968"
+						text: "Live Stream (11AM PDT)",
+						style: "live",
+						link: "https://www.jazzlive.com/essentially-ellington-23"
 					}
 				]}
 			/>
