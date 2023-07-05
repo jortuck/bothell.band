@@ -43,40 +43,26 @@
 		content="Bothell High School Jazz Band"
 	/>
 </svelte:head>
-
 <section class="mb-10 space-y-10">
-	<h2 class="bebasneue text-center text-4xl text-white md:text-5xl">Upcoming Events...</h2>
+	<h2 class="bebasneue text-center text-4xl text-white md:text-5xl">
+		Thank you for your support this year! Have a great summer!
+	</h2>
 	<div class="grid grid-rows-1 justify-items-center space-y-10">
-		<div class="mx-4 grid grid-cols-1  gap-x-10 gap-y-5 lg:grid-cols-2">
-			<Card
-				id="ellington"
-				image="/ellington.jpg"
-				imgAlt="Essentially Ellington Logo"
-				name="Essentially Ellington"
-				date="May 12th - 11AM PDT"
-				location="New York City"
-				highlighted={true}
-				buttons={[
-					{
-						text: "Event Website",
-						style: "plain",
-						link: "https://2023.jazz.org/essentially-ellington"
-					},
-					{
-						text: "Live Stream",
-						style: "live",
-						link: "https://www.jazzlive.com/essentially-ellington-23"
-					}
-				]}
-			/>
-		</div>
+		<iframe
+			class="aspect-video w-full md:w-1/2"
+			src="https://www.youtube.com/embed/u2bigf337aU"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen
+		/>
 	</div>
 </section>
 <section>
 	<div class="space-y-5">
 		<h2 class="bebasneue text-center text-4xl text-white md:text-5xl">Additional Resources</h2>
 		<div class="flex w-full flex-col items-center">
-			<div class="flex w-full  max-w-2xl flex-col items-center items-stretch space-y-4 text-center">
+			<div class="flex w-full max-w-2xl flex-col items-center items-stretch space-y-4 text-center">
 				{#if browser && navigator.share}
 					<button
 						on:click={share}
