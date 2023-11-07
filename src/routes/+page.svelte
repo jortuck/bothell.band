@@ -81,7 +81,7 @@
 				>
 				<Buttonlink
 					refer={true}
-					url="https://my.cheddarup.com/c/bothellmusicboosters"
+					url="https://my.cheddarup.com/c/bhs-music-boosters-2023-2024"
 					>Bothell Music Boosters Store</Buttonlink
 				>
 			</div>
