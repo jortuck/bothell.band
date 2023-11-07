@@ -45,18 +45,8 @@
 </svelte:head>
 <section class="mb-10 space-y-10">
 	<h2 class="bebasneue text-center text-4xl text-white md:text-5xl">
-		Thank you for your support this year! Have a great summer!
+		Welcome! There are currently no upcoming events.
 	</h2>
-	<div class="grid grid-rows-1 justify-items-center space-y-10">
-		<iframe
-			class="aspect-video w-full md:w-1/2"
-			src="https://www.youtube.com/embed/u2bigf337aU"
-			title="YouTube video player"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen
-		/>
-	</div>
 </section>
 <section>
 	<div class="space-y-5">
