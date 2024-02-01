@@ -1,7 +1,9 @@
-<script>
+<script lang="ts">
 	import Buttonlink from "$lib/Buttonlink.svelte";
 	import Card from "$lib/Card.svelte";
 	import { browser } from "$app/environment";
+	import type { PageData } from "./$types";
+	export let data: PageData;
 	function share() {
 		navigator
 			.share({
@@ -21,11 +23,18 @@
 		content="Stay up-to-date on Bothell High School Jazz Band's news and events. Buy tickets, support fundraising efforts, and don't miss upcoming performances.
 "
 	/>
-	<meta
-		name="og:description"
-		content="Stay up-to-date on Bothell High School Jazz Band's news and events. Buy tickets, support fundraising efforts, and don't miss upcoming performances.
+	{#if data.homePage}
+		<meta
+			name="og:description"
+			content={data.homePage.data.attributes.MetaDescription}
+		/>
+	{:else}
+		<meta
+			name="og:description"
+			content="Stay up-to-date on Bothell High School Jazz Band's news and events. Buy tickets, support fundraising efforts, and don't miss upcoming performances.
 "
-	/>
+		/>
+	{/if}
 	<meta
 		name="keywords"
 		content="Bothell High School, Jazz Band, Jazz Music, School Band, Performance, Upcoming Events, Fundraising"
@@ -45,36 +54,35 @@
 </svelte:head>
 <section class="mb-10 space-y-10">
 	<h2 class="bebasneue text-center text-4xl text-white md:text-5xl">
-		Welcome! There are currently no upcoming events.
+		{#if data.homePage}
+			{data.homePage.data.attributes.NoEventsText}
+		{:else}
+			Welcome! There are currently no upcoming events.
+		{/if}
 	</h2>
 </section>
 <section>
-	<div class="space-y-5">
-		<h2 class="bebasneue text-center text-4xl text-white md:text-5xl">Additional Resources</h2>
-		<div class="flex w-full flex-col items-center">
-			<div class="flex w-full max-w-2xl flex-col items-center items-stretch space-y-4 text-center">
-				{#if browser && navigator.share}
-					<button
-						on:click={share}
-						class="bebasneue mx-3 bg-bothellblue p-3 align-middle text-3xl text-white shadow-2xl transition-all duration-300 ease-in-out hover:bg-white hover:text-bothellblue active:translate-y-1 md:text-4xl"
-						>Share This Website!</button
-					>
-				{/if}
-				<Buttonlink
-					refer={true}
-					url="https://www.bothellmusicboosters.org/">Bothell Music Boosters</Buttonlink
+	{#if data.homePage}
+		<div class="space-y-5">
+			<h2 class="bebasneue text-center text-4xl text-white md:text-5xl">
+				{data.homePage.data.attributes.LinkHeader}
+			</h2>
+			<div class="flex w-full flex-col items-center">
+				<div
+					class="flex w-full max-w-2xl flex-col items-center items-stretch space-y-4 text-center"
 				>
-				<Buttonlink
-					refer={false}
-					url="https://www.facebook.com/bothellmusicboosters"
-					>Bothell Music Boosters Facebook</Buttonlink
-				>
-				<Buttonlink
-					refer={true}
-					url="https://my.cheddarup.com/c/bhs-music-boosters-2023-2024"
-					>Bothell Music Boosters Store</Buttonlink
-				>
+					{#if browser && navigator.share}
+						<button
+							on:click={share}
+							class="bebasneue mx-3 bg-bothellblue p-3 align-middle text-3xl text-white shadow-2xl transition-all duration-300 ease-in-out hover:bg-white hover:text-bothellblue active:translate-y-1 md:text-4xl"
+							>Share This Website!</button
+						>
+					{/if}
+					{#each data.homePage.data.attributes.links as link}
+						<Buttonlink url={link.url}>{link.text}</Buttonlink>
+					{/each}
+				</div>
 			</div>
 		</div>
-	</div>
+	{/if}
 </section>
