@@ -2,7 +2,9 @@
 	import Buttonlink from "$lib/Buttonlink.svelte";
 	import Card from "$lib/Card.svelte";
 	import { browser } from "$app/environment";
+	import { PUBLIC_API_HOST } from "$env/static/public";
 	import type { PageData } from "./$types";
+	import CardButton from "$lib/CardButton.svelte";
 	export let data: PageData;
 	function share() {
 		navigator
@@ -54,12 +56,43 @@
 </svelte:head>
 <section class="mb-10 space-y-10">
 	<h2 class="bebasneue text-center text-4xl text-white md:text-5xl">
-		{#if data.homePage}
+		{#if data.homePage && data.events.data.length === 0}
 			{data.homePage.data.attributes.NoEventsText}
+		{:else if data.events && data.events.data.length !== 0}
+			Welcome! Upcoming events:
 		{:else}
-			Welcome! There are currently no upcoming events.
+			Welcome! There are no upcoming events!
 		{/if}
 	</h2>
+	{#if data.events}
+		<div class="grid grid-rows-1 justify-items-center space-y-10">
+			<div class="mx-4 grid grid-cols-1 gap-x-10 gap-y-5 lg:grid-cols-2">
+				{#each data.events.data as event}
+					<Card
+						let:Button
+						alert={event.attributes.coverText}
+						image={PUBLIC_API_HOST + event.attributes.thumbnail.data.attributes.url}
+						imgAlt={event.attributes.thumbnail.data.attributes.alternativeText}
+						name={event.attributes.title}
+						date={event.attributes.date}
+						location={event.attributes.location}
+						locationURL={event.attributes.locationURL}
+						highlighted={event.attributes.highlightedEvent}
+					>
+						{#each event.attributes.eventLinks as link}
+							<Button
+								link={link.url}
+								disabled={link.disabled}
+								buttonStyle={link.style}
+							>
+								{link.text}
+							</Button>
+						{/each}
+					</Card>
+				{/each}
+			</div>
+		</div>
+	{/if}
 </section>
 <section>
 	{#if data.homePage}
