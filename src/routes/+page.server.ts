@@ -1,7 +1,7 @@
 import type { PageServerLoad } from "./$types";
 import { PUBLIC_API_HOST } from "$env/static/public";
 import { API_KEY } from "$env/static/private";
-
+export const prerender: boolean = true;
 export const load: PageServerLoad = async ({ params }) => {
 	let homePageData: any;
 	let eventsData: any;
