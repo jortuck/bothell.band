@@ -11,7 +11,7 @@
 </script>
 
 <div
-	class="w-full items-center justify-center justify-items-center shadow-xl"
+	class="flex w-full flex-col bg-red-500 shadow-xl"
 	class:highlighted
 	class:shadow-gray-800={!highlighted}
 >
@@ -45,7 +45,7 @@
 			{/if}
 		</div>
 	</div>
-	<div class="w-full bg-bgsecondary px-3 py-2">
+	<div class="w-full flex-1 bg-bgsecondary px-3 py-2">
 		<h3 class="bebasneue text-center text-2xl text-white lg:text-3xl">{name}</h3>
 		<h3 class="bebasneue text-center text-2xl text-white lg:text-3xl">
 			{#if date}
