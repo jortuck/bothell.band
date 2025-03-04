@@ -23,8 +23,8 @@
 		</div>
 	{/if}
 	<div
+		class="h-72 w-full md:h-80"
 		style="background-image: url({image})"
-		class="h-72 bg-white md:h-80"
 	>
 		<div class="relative h-full backdrop-blur-2xl">
 			<img
@@ -45,7 +45,7 @@
 			{/if}
 		</div>
 	</div>
-	<div class="bg-bgsecondary px-3 py-2">
+	<div class="w-full bg-bgsecondary px-3 py-2">
 		<h3 class="bebasneue text-center text-2xl text-white lg:text-3xl">{name}</h3>
 		<h3 class="bebasneue text-center text-2xl text-white lg:text-3xl">
 			{#if date}
@@ -63,7 +63,7 @@
 			{/if}
 		</h3>
 	</div>
-	<div class="flex flex-row">
+	<div class="flex w-full flex-row">
 		<slot {Button} />
 	</div>
 </div>
